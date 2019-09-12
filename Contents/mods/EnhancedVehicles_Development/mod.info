@@ -1,0 +1,5 @@
+name=Enhanced Vehicles - Development
+poster=EnhancedVehicles_Development.png
+id=EnhancedVehicles_Development
+require=EnhancedVehicles
+description=Version for developers

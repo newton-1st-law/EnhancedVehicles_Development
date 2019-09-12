@@ -1,0 +1,300 @@
+module Base
+{
+	
+	sound VehicleBackUpBeeper
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_moveback_van.wav,
+			distanceMin = 5,
+			distanceMax = 75,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+
+	sound EnhancedSiren2Alarm
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_siren_alarm2.wav,
+			distanceMin = 10,
+			distanceMax = 100,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
+	sound EnhancedSiren2Yelp
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_siren_yelp2.wav,
+			distanceMin = 10,
+			distanceMax = 100,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
+	sound EnhancedSiren2Wall
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_siren_wall2.wav,
+			distanceMin = 10,
+			distanceMax = 100,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
+	sound EnhancedSiren3Alarm
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_siren_alarm3.wav,
+			distanceMin = 10,
+			distanceMax = 100,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
+	sound EnhancedSiren3Yelp
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_siren_yelp3.wav,
+			distanceMin = 10,
+			distanceMax = 100,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
+	sound EnhancedSiren3Wall
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_siren_wall3.wav,
+			distanceMin = 10,
+			distanceMax = 100,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
+	sound EnhancedSiren4Alarm
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_siren_alarm4.wav,
+			distanceMin = 10,
+			distanceMax = 100,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
+	sound EnhancedSiren4Yelp
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_siren_yelp4.wav,
+			distanceMin = 10,
+			distanceMax = 100,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
+	sound EnhancedSiren4Wall
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_siren_wall4.wav,
+			distanceMin = 10,
+			distanceMax = 100,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
+	sound EnhancedSiren5Alarm
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_siren_alarm5.wav,
+			distanceMin = 10,
+			distanceMax = 100,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
+	sound EnhancedSiren5Yelp
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_siren_yelp5.wav,
+			distanceMin = 10,
+			distanceMax = 100,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
+	sound EnhancedSiren5Wall
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_siren_wall5.wav,
+			distanceMin = 10,
+			distanceMax = 100,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+		
+	sound EnhancedAirHorn1
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_air_horn1.wav,
+			distanceMin = 10,
+			distanceMax = 300,
+		}
+	}
+	
+	sound EnhancedAirHorn2
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_air_horn2.wav,
+			distanceMin = 10,
+			distanceMax = 300,
+		}
+	}
+	
+	sound EnhancedAirHorn3
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_air_horn3.wav,
+			distanceMin = 10,
+			distanceMax = 300,
+		}
+	}
+	
+	sound EnhancedAirHorn4
+	{
+		category = Vehicle,
+		loop = false,
+		clip
+		{
+			file = media/sound/vehicle_air_horn4.wav,
+			distanceMin = 10,
+			distanceMax = 300,
+		}
+	}
+
+	sound EnhancedAirHorn5
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_air_horn5.wav,
+			distanceMin = 10,
+			distanceMax = 300,
+		}
+	}
+	
+	sound VehicleHorn3
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			/* Not 'event' because it switches between 2D/3D. */
+			file = media/sound/vehicle_horn3.wav,
+			distanceMin = 10,
+			distanceMax = 75,
+		}
+	}
+
+		sound VehicleCrash
+	{
+		category = Vehicle,
+		loop = false,
+		clip
+		{
+			file = media/sound/smashcar.wav,
+			distanceMin = 10,
+			distanceMax = 300,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
+	sound VehicleDoorOpen
+	{
+		category = Vehicle,
+		loop = false,
+		clip
+		{
+			file = media/sound/vehicle_enter.wav,
+			distanceMin = 2,
+			distanceMax = 20,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
+	sound VehicleDoorClose
+	{
+		category = Vehicle,
+		loop = false,
+		clip
+		{
+			file = media/sound/vehicle_door_close.wav,
+			distanceMin = 2,
+			distanceMax = 20,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+}
