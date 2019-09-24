@@ -1,4 +1,6 @@
-![Enhanced Vehicles](/Contents/mods/EnhancedVehicles_Development/EnhancedVehicles_Development.png)
+<p align="center">
+  <img width="300" height="300" src="/Contents/mods/EnhancedVehicles_Development/EnhancedVehicles_Development.png">
+</p>
 
 # Enhanced Vehicles - Development version
 This modification includes the replacement of vanilla vehicles for more realistic and detailed ones, as well as some sound effects and additional functions that improve the functionality of the game process associated with cars.
