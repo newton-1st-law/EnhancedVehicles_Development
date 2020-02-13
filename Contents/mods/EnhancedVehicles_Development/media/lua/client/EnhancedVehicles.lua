@@ -12,7 +12,8 @@ local function VehicleModel()
 		"CapriceTaxi1",
 		"CapriceTaxi2",
 		"CapriceTaxi3",
-		"Ambulance",
+		"FordAmbulance",
+		"Countach",
 		"HMMWV",
 	};
 	
@@ -27,6 +28,7 @@ local function VehicleModel()
 		"Caprice4",
 		"Caprice5",
 		"Ambulance",
+		"SportCar",
 		"Van",
 		"HMMWV_InflatedTire",
 		"HMMWV_OldTire",

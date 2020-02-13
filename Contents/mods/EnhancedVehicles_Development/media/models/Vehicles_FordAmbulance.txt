@@ -2,7 +2,7 @@
 # File Version:
 1.0
 # Model Name:
-AmbulanceVan.
+Vehicles_FordAmbulance
 # Vertex Stride Element Count:
 3
 # Vertex Stride Size (in bytes):

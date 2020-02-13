@@ -1,6 +1,15 @@
 module Base
 {
-	vehicle CarTaxi
+
+	model Vehicles_CapriceSedan2
+	{
+		mesh = vehicles/Vehicles_CapriceSedan2,
+		shader = vehicle,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	vehicle CarNormal2
 	{
 		mechanicType = 1,
 		engineRepairLevel = 4,
@@ -8,7 +17,7 @@ module Base
 
 		model
 		{
-			file = Vehicles_CapriceTaxi1,
+			file = Vehicles_CapriceSedan2,
 			scale = 1.8200,
 			offset = 0.0000 0.3571 -0.0275,
 		}
@@ -17,17 +26,7 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/CapriceTaxi1/Vehicles_CapriceTaxi1_Shell,
-		}
-
-		skin
-		{
-			texture = Vehicles/CapriceTaxi1/Vehicles_CapriceTaxi1_Shell2,
-		}
-
-		skin
-		{
-			texture = Vehicles/CapriceTaxi1/Vehicles_CapriceTaxi1_Shell3,
+			texture = Vehicles/CapriceSedan/Vehicles_CapriceSedan_Shell,
 		}
 
 		sound
@@ -35,13 +34,14 @@ module Base
 			horn = VehicleHorn,
 		}
 
-		textureRust = Vehicles/CapriceTaxi1/Vehicles_CapriceTaxi1_Rust,
-		textureMask = Vehicles/CapriceTaxi1/Vehicles_CapriceTaxi1_Mask,
-		textureLights = Vehicles/CapriceTaxi1/Vehicles_CapriceTaxi1_Lights,
-		textureDamage1Overlay = Vehicles/CapriceTaxi1/Vehicles_CapriceTaxi1_Overlays_DAMAGED_01,
-		textureDamage2Overlay = Vehicles/CapriceTaxi1/Vehicles_CapriceTaxi1_Overlays_DAMAGED_02,
-		textureDamage1Shell = Vehicles/CapriceTaxi1/Vehicles_CapriceTaxi1_Shell_DAMAGED_01,
-		textureDamage2Shell = Vehicles/CapriceTaxi1/Vehicles_CapriceTaxi1_Shell_DAMAGED_02,
+		textureRust = Vehicles/CapriceSedan/Vehicles_CapriceSedan_Rust,
+		textureMask = Vehicles/CapriceSedan/Vehicles_CapriceSedan_Mask,
+		textureLights = Vehicles/CapriceSedan/Vehicles_CapriceSedan_Lights,
+		textureDamage1Overlay = Vehicles/CapriceSedan/Vehicles_CapriceSedan_Overlays_DAMAGED_01,
+		textureDamage2Overlay = Vehicles/CapriceSedan/Vehicles_CapriceSedan_Overlays_DAMAGED_02,
+		textureDamage1Shell = Vehicles/CapriceSedan/Vehicles_CapriceSedan_Shell_DAMAGED_01,
+		textureDamage2Shell = Vehicles/CapriceSedan/Vehicles_CapriceSedan_Shell_DAMAGED_02,
+		
 		extents = 0.8901 0.6044 2.6374,
 		physicsChassisShape = 0.8901 0.6044 2.6374,
 		shadowOffset = 0.0 0.0 0.0 0.0,
@@ -293,7 +293,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Wheel_Caprice4,
+				file = Wheel_Caprice5,
 			}
 		}
 
