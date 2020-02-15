@@ -1,8 +1,13 @@
 IG_UI_EN = {	
-	IGUI_VehicleNameCarDetective = "Chevalier Cerise - Police Detective",	IGUI_VehicleNameCarLights = "Chevalier Cerise",	IGUI_VehicleNameCarLightsPolice = "Chevalier Cerise",	IGUI_VehicleNameCarLightsPolice2 = "Chevalier Cerise Wagon",
+	IGUI_VehicleNameCarDetective = "Chevalier Cerise - Police Detective",
+	IGUI_VehicleNameCarLights = "Chevalier Cerise",
+	IGUI_VehicleNameCarLightsPolice = "Chevalier Cerise",
+	IGUI_VehicleNameCarLightsPolice2 = "Chevalier Cerise - Wagon",
 	IGUI_VehicleNameCarTaxi = "Chevalier Cerise - Taxi Cab.",
 	IGUI_VehicleNameCarTaxi2 = "Chevalier Cerise - Taxi Cab.",
 	IGUI_VehicleNameCarTaxi3 = "Chevalier Cerise - Taxi Cab.",
+	
+    IGUI_VehicleNameSportsCar = "Lmbrogliare Pazzo",
 	
 	IGUI_VehicleNameHMMWV = "RMWV",
 	

@@ -3,7 +3,7 @@ module Base
 	vehicle SportsCar
 	{
 		mechanicType = 3,
-		offRoadEfficiency = 0.8,
+		offRoadEfficiency = 0.5,
 		engineRepairLevel = 6,
 		playerDamageProtection = 0.8,
 		engineRPMType = firebird,
@@ -68,32 +68,32 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 0.3571 -0.1648 0.5769,
-			radius = 0.15f,
+			offset = 0.3681 -0.1703 0.5769,
+			radius = 0.14f,
 			width = 0.2f,
 		}
 
 		wheel FrontRight
 		{
 			front = true,
-			offset = -0.3571 -0.1648 0.5769,
-			radius = 0.15f,
+			offset = -0.3681 -0.1703 0.5769,
+			radius = 0.14f,
 			width = 0.2f,
 		}
 
 		wheel RearLeft
 		{
 			front = false,
-			offset = 0.3736 -0.1648 -0.6319,
-			radius = 0.15f,
+			offset = 0.3736 -0.1703 -0.6264,
+			radius = 0.14f,
 			width = 0.2f,
 		}
 
 		wheel RearRight
 		{
 			front = false,
-			offset = -0.3736 -0.1648 -0.6319,
-			radius = 0.15f,
+			offset = -0.3736 -0.1703 -0.6264,
+			radius = 0.14f,
 			width = 0.2f,
 		}
 
@@ -133,12 +133,12 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 1.2637 0.7912 0.4725,
+			xywh = 0.0000 1.2473 0.4396 0.4396,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -1.2637 0.7912 0.4725,
+			xywh = 0.0000 -1.2637 0.4725 0.4725,
 		}
 
 		area SeatFrontLeft
@@ -180,6 +180,9 @@ module Base
 
 		part TrunkDoor
 		{
+			area = Engine,
+			angle = 0.0 0.0 0.0,
+
 			table install
 			{
 				recipes = Advanced Mechanics,
@@ -195,6 +198,8 @@ module Base
 
 		part TruckBed
 		{
+			area = Engine,
+			angle = 0.0 0.0 0.0,
 			itemType = Base.SmallTrunk,
 		}
 
@@ -252,6 +257,15 @@ module Base
 		}
 
 		template = Battery,
+
+		
+		{
+			part Battery
+			{
+				area = TruckBed,
+			}
+		}
+
 		template = Engine,
 		template = Muffler,
 
@@ -272,6 +286,9 @@ module Base
 
 		part EngineDoor
 		{
+			area = TruckBed,
+			angle = 0.0 0.0 0.0,
+
 			table install
 			{
 				recipes = Advanced Mechanics,
@@ -332,6 +349,130 @@ module Base
 			table uninstall
 			{
 				recipes = Advanced Mechanics,
+			}
+		}
+
+		template = Window/part/WindowRearLeft,
+
+		part WindowRearLeft
+		{
+			area = SeatFrontLeft,
+			category = bodywork,
+			itemType = Base.RearWindow,
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				requireInstalled = DoorFrontLeft,
+
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+
+				time = 300,
+				skills = Mechanics:5,
+				recipes = Advanced Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Window,
+			}
+
+			table uninstall
+			{
+				requireInstalled = DoorFrontLeft,
+
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+
+				time = 300,
+				skills = Mechanics:5,
+				recipes = Advanced Mechanics,
+				test = Vehicles.UninstallTest.Default,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Window,
+			}
+		}
+
+		template = Window/part/WindowRearRight,
+
+		part WindowRearRight
+		{
+			area = SeatFrontRight,
+			category = bodywork,
+			itemType = Base.RearWindow,
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				requireInstalled = DoorFrontRight,
+
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+
+				time = 300,
+				skills = Mechanics:5,
+				recipes = Advanced Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Window,
+			}
+
+			table uninstall
+			{
+				requireInstalled = DoorFrontRight,
+
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+
+				time = 300,
+				skills = Mechanics:5,
+				recipes = Advanced Mechanics,
+				test = Vehicles.UninstallTest.Default,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Window,
 			}
 		}
 

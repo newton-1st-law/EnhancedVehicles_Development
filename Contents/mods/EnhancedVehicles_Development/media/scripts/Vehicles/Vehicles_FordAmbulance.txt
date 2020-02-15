@@ -89,7 +89,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 0.3626 -0.3681 1.0440,
+			offset = 0.3846 -0.3846 1.0385,
 			radius = 0.15f,
 			width = 0.2f,
 		}
@@ -97,7 +97,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -0.3626 -0.3681 1.0440,
+			offset = -0.3846 -0.3846 1.0385,
 			radius = 0.15f,
 			width = 0.2f,
 		}
@@ -105,7 +105,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 0.4286 -0.3681 -0.5330,
+			offset = 0.4396 -0.3846 -0.5330,
 			radius = 0.15f,
 			width = 0.2f,
 		}
@@ -113,7 +113,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -0.4286 -0.3681 -0.5330,
+			offset = -0.4396 -0.3846 -0.5330,
 			radius = 0.15f,
 			width = 0.2f,
 		}
@@ -302,37 +302,37 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -1.5934 0.9341 0.4725,
+			xywh = 0.0000 -1.6319 0.9341 0.4725,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 0.7033 0.5879 0.4725 0.4725,
+			xywh = 0.7088 0.5879 0.4725 0.4725,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -0.7033 0.5879 0.4725 0.4725,
+			xywh = -0.7088 0.5879 0.4725 0.4725,
 		}
 
 		area SeatMiddleLeft
 		{
-			xywh = -0.7747 -0.1264 0.4725 0.4725,
+			xywh = -0.7088 -0.1264 0.4725 0.4725,
 		}
 
 		area SeatMiddleRight
 		{
-			xywh = -0.7747 -0.1264 0.4725 0.4725,
+			xywh = -0.7088 -0.1264 0.4725 0.4725,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -0.2308 -1.5934 0.4725 0.4725,
+			xywh = -0.2308 -1.6319 0.4725 0.4725,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 0.2308 -1.5934 0.4725 0.4725,
+			xywh = 0.2308 -1.6319 0.4725 0.4725,
 		}
 
 		area GasTank
@@ -342,22 +342,22 @@ module Base
 
 		area TireFrontLeft
 		{
-			xywh = 0.7033 1.0055 0.4725 0.4725,
+			xywh = 0.7033 0.9945 0.4725 0.4725,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -0.7033 1.0055 0.4725 0.4725,
+			xywh = -0.7033 0.9945 0.4725 0.4725,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 0.7033 -0.5714 0.4725 0.4725,
+			xywh = 0.7033 -0.5769 0.4725 0.4725,
 		}
 
 		area TireRearRight
 		{
-			xywh = -0.7033 -0.5714 0.4725 0.4725,
+			xywh = -0.7033 -0.5769 0.4725 0.4725,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -545,11 +545,35 @@ module Base
 
 		template = Tire,
 
-		part Tire*
+		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
 			{
 				file = Wheel_Ambulance,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = Wheel_Ambulance,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = Wheel_Ambulance_Rear,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = Wheel_Ambulance_Rear,
 			}
 		}
 

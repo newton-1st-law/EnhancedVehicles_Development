@@ -28,6 +28,7 @@ local function VehicleModel()
 		"Caprice4",
 		"Caprice5",
 		"Ambulance",
+		"Ambulance_Rear",
 		"SportCar",
 		"Van",
 		"HMMWV_InflatedTire",
