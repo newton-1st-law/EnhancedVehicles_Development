@@ -41,7 +41,7 @@ module Base
 		}
 
 		extents = 0.9890 1.3297 2.8352,
-		mass = 1200,
+		mass = 1500,
 		physicsChassisShape = 0.9890 1.3297 2.8352,
 		centerOfMassOffset = 0.0000 0.3516 0.0000,
 		engineForce = 8000,
@@ -53,7 +53,7 @@ module Base
 		rollInfluence = 1.0f,
 		steeringIncrement = 0.03,
 		steeringClamp = 0.3,
-		suspensionStiffness = 35,
+		suspensionStiffness = 95,
 		suspensionCompression = 3.83,
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 6,
@@ -68,7 +68,7 @@ module Base
 			front = true,
 			offset = 0.0000 -0.2857 0.9121,
 			radius = 0.35f,
-			width = 2.5f,
+			width = 2.3f,
 		}
 
 		wheel FrontRight
@@ -76,7 +76,7 @@ module Base
 			front = false,
 			offset = 0.0000 -0.2857 0.9121,
 			radius = 0.35f,
-			width = 2.5f,
+			width = 2.3f,
 		}
 
 		wheel RearLeft
@@ -84,7 +84,7 @@ module Base
 			front = false,
 			offset = 0.3736 -0.2857 -0.5385,
 			radius = 0.35f,
-			width = 0.5f,
+			width = 0.4f,
 		}
 
 		wheel RearRight
@@ -92,7 +92,7 @@ module Base
 			front = false,
 			offset = -0.3736 -0.2857 -0.5385,
 			radius = 0.35f,
-			width = 0.5f,
+			width = 0.4f,
 		}
 
 		template = PassengerSeat2,
