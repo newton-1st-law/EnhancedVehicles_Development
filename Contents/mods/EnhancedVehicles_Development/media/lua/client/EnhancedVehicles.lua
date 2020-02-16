@@ -15,6 +15,7 @@ local function VehicleModel()
 		"FordAmbulance",
 		"Countach",
 		"HMMWV",
+		"CAT",
 	};
 	
 	for i,v in pairs(VehiclesModel) do
@@ -34,6 +35,8 @@ local function VehicleModel()
 		"HMMWV_InflatedTire",
 		"HMMWV_OldTire",
 		"HMMWV_PerformanceTire",
+		"CATR",
+		"CATF",
 	};
 	
 	for i,v in pairs(WheelsModel) do

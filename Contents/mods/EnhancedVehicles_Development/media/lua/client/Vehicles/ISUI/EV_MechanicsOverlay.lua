@@ -35,7 +35,7 @@ ISCarMechanicsOverlay.PartList["HeadlightRight"] = {img="headlight_right"};
 ISCarMechanicsOverlay.PartList["EngineDoor"].vehicles["caprice_sedan_"] =		{x=88,y=140,x2=196,y2=226};
 ISCarMechanicsOverlay.PartList["EngineDoor"].vehicles["caprice_wagon_"] =		{x=88,y=140,x2=196,y2=226};
 ISCarMechanicsOverlay.PartList["EngineDoor"].vehicles["ambulance_"] =			{x=90,y=123,x2=194,y2=160};
-ISCarMechanicsOverlay.PartList["EngineDoor"].vehicles["countach_"] =			{x=104,y=349,x2=184,y2=429};
+ISCarMechanicsOverlay.PartList["EngineDoor"].vehicles["countach_"] =			{x=115,y=135,x2=172,y2=200};
 --
 ISCarMechanicsOverlay.PartList["TireFrontLeft"].vehicles["caprice_sedan_"] =	{x=71,y=179,x2=80,y2=220};
 ISCarMechanicsOverlay.PartList["TireFrontLeft"].vehicles["caprice_wagon_"] =	{x=71,y=179,x2=80,y2=220};
@@ -111,7 +111,7 @@ ISCarMechanicsOverlay.PartList["DoorMiddleRight"].vehicles["ambulance_"] = {x=21
 ISCarMechanicsOverlay.PartList["TruckBed"].vehicles["caprice_sedan_"] = {x=90,y=418,x2=192,y2=469};
 ISCarMechanicsOverlay.PartList["TruckBed"].vehicles["caprice_wagon_"] = {x=94,y=460,x2=190,y2=472};
 ISCarMechanicsOverlay.PartList["TruckBed"].vehicles["ambulance_"] = 	{x=99,y=459,x2=184,y2=471};
-ISCarMechanicsOverlay.PartList["TruckBed"].vehicles["countach_"] = 		{x=115,y=135,x2=172,y2=200};
+ISCarMechanicsOverlay.PartList["TruckBed"].vehicles["countach_"] = 		{x=104,y=349,x2=184,y2=429};
 
 -- certain car have different parts placement
 --ISCarMechanicsOverlay.CarList["Base.SUV"].PartList = {};

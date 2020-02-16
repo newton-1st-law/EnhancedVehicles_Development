@@ -133,12 +133,12 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 1.2473 0.4396 0.4396,
+			xywh = 0.0000 -1.2637 0.4725 0.4725,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -1.2637 0.4725 0.4725,
+			xywh = 0.0000 1.2418 0.4286 0.4286,
 		}
 
 		area SeatFrontLeft
@@ -153,7 +153,7 @@ module Base
 
 		area GasTank
 		{
-			xywh = 0.6978 -0.5659 0.4725 0.4725,
+			xywh = 0.6978 -0.2582 0.4725 0.4725,
 		}
 
 		area TireFrontLeft
@@ -180,26 +180,84 @@ module Base
 
 		part TrunkDoor
 		{
-			area = Engine,
-			angle = 0.0 0.0 0.0,
-
+			category = bodywork,
+			area = TruckBed,
+			door
+			{
+			}
+			anim Open
+			{
+				sound = VehicleTrunkOpen,
+			}
+			anim Close
+			{
+				sound = VehicleTrunkClose,
+			}
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 180.0 0.0,
+			}
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 180.0 0.0,
+			}
+			itemType = Base.TrunkDoor,
+			mechanicRequireKey = true,
 			table install
 			{
 				recipes = Advanced Mechanics,
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
 			}
-
 			table uninstall
 			{
 				recipes = Advanced Mechanics,
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,
 			}
 		}
-
+	
 		template = Trunk/part/TruckBed,
 
 		part TruckBed
 		{
-			area = Engine,
-			angle = 0.0 0.0 0.0,
 			itemType = Base.SmallTrunk,
 		}
 
@@ -257,16 +315,32 @@ module Base
 		}
 
 		template = Battery,
-
-		
 		{
-			part Battery
+		part Battery
 			{
 				area = TruckBed,
 			}
 		}
 
 		template = Engine,
+		{
+		part EngineDoor
+				{
+				}
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 0.0 0.0,
+			}
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 0.0 0.0,
+			}
+		}
+		
 		template = Muffler,
 
 		part Muffler
@@ -286,17 +360,77 @@ module Base
 
 		part EngineDoor
 		{
-			area = TruckBed,
-			angle = 0.0 0.0 0.0,
-
+			category = bodywork,
+			area = Engine,
+			door
+			{
+			}
+			anim Open
+			{
+				sound = VehicleHoodOpen,
+			}
+			anim Close
+			{
+				sound = VehicleHoodClose,
+			}
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 0.0 0.0,
+			}
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 0.0 0.0,
+			}
+			itemType = Base.EngineDoor,
+			mechanicRequireKey = true,
 			table install
 			{
 				recipes = Advanced Mechanics,
+				items
+				{
+					1
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
 			}
-
 			table uninstall
 			{
 				recipes = Advanced Mechanics,
+				items
+				{
+					1
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+				init = Vehicles.Init.Door,
+				update = Vehicles.Update.EngineDoor,
+				use = Vehicles.Use.EngineDoor,
 			}
 		}
 
@@ -356,8 +490,9 @@ module Base
 
 		part WindowRearLeft
 		{
-			area = SeatFrontLeft,
+			area = TireRearLeft,
 			category = bodywork,
+			parent =,
 			itemType = Base.RearWindow,
 
 			window
@@ -367,7 +502,7 @@ module Base
 
 			table install
 			{
-				requireInstalled = DoorFrontLeft,
+				requireInstalled =,
 
 				items
 				{
@@ -389,7 +524,7 @@ module Base
 
 			table uninstall
 			{
-				requireInstalled = DoorFrontLeft,
+				requireInstalled =,
 
 				items
 				{
@@ -418,8 +553,9 @@ module Base
 
 		part WindowRearRight
 		{
-			area = SeatFrontRight,
+			area = TireRearRight,
 			category = bodywork,
+			parent =,
 			itemType = Base.RearWindow,
 
 			window
@@ -429,7 +565,7 @@ module Base
 
 			table install
 			{
-				requireInstalled = DoorFrontRight,
+				requireInstalled =,
 
 				items
 				{
@@ -451,7 +587,7 @@ module Base
 
 			table uninstall
 			{
-				requireInstalled = DoorFrontRight,
+				requireInstalled =,
 
 				items
 				{
