@@ -28,7 +28,7 @@ module Base
 		textureDamage1Overlay = Vehicles/Countach/Alpha,
 		textureDamage1Shell = Vehicles/Countach/Vehicles_Countach_Shell_DAMAGED_01,
 		textureDamage2Overlay = Vehicles/Countach/Alpha,
-		textureDamage2Shell = Vehicles/Countach/Vehicles_Countach_Shell_DAMAGED_01,
+		textureDamage2Shell = Vehicles/Countach/Vehicles_Countach_Shell_DAMAGED_02,
 
 		sound
 		{
