@@ -25,9 +25,9 @@ module Base
 		textureRust = Vehicles/Countach/Vehicles_Countach_Rust,
 		textureMask = Vehicles/Countach/Vehicles_Countach_Mask,
 		textureLights = Vehicles/Countach/Vehicles_Countach_Lights,
-		textureDamage1Overlay = Vehicles/Countach/Alpha,
+		textureDamage1Overlay = Vehicles/Countach/Vehicles_Countach_Overlays_DAMAGED_01,
 		textureDamage1Shell = Vehicles/Countach/Vehicles_Countach_Shell_DAMAGED_01,
-		textureDamage2Overlay = Vehicles/Countach/Alpha,
+		textureDamage2Overlay = Vehicles/Countach/Vehicles_Countach_Overlays_DAMAGED_02,
 		textureDamage2Shell = Vehicles/Countach/Vehicles_Countach_Shell_DAMAGED_02,
 
 		sound
