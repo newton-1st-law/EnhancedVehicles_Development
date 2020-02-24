@@ -32,7 +32,7 @@ module Base
 
 		sound
 		{
-			horn = VehicleHorn,
+			horn = VehicleHorn2,
 		}
 
 		extents = 0.9231 0.5055 2.0549,
@@ -43,14 +43,14 @@ module Base
 		engineLoudness = 90,
 		engineQuality = 90,
 		maxSpeed = 120f,
-		gearRatioCount = 5,
-		gearRatioR = 3.5,
-		gearRatio1 = 4.11,
-		gearRatio2 = 2.50,
-		gearRatio3 = 1.65,
-		gearRatio4 = 1.25,
-		gearRatio5 = 0.80,
-		gearRatio5 = 0.60,
+/*		gearRatioCount = 5,		*/
+/*		gearRatioR = 3.5,		*/
+/*		gearRatio1 = 10.00,		*/
+/*		gearRatio2 = 15.00,		*/
+/*		gearRatio3 = 20.00,		*/
+/*		gearRatio4 = 15.00,		*/
+/*		gearRatio5 = 10.80,		*/
+/*		gearRatio5 = 5.00,		*/
 		stoppingMovementForce = 2.0f,
 		rollInfluence = 0.7f,
 		steeringIncrement = 0.04,
@@ -187,11 +187,11 @@ module Base
 			}
 			anim Open
 			{
-				sound = VehicleTrunkOpen,
+				sound = VehicleSportTrunkOpen,
 			}
 			anim Close
 			{
-				sound = VehicleTrunkClose,
+				sound = VehicleSportTrunkClose,
 			}
 			anim ActorOpen
 			{
@@ -325,8 +325,16 @@ module Base
 		template = Engine,
 		{
 		part EngineDoor
-				{
-				}
+			{
+			}
+			anim Open
+			{
+				sound = VehicleSportTrunkOpen,
+			}
+			anim Close
+			{
+				sound = VehicleSportTrunkClose,
+			}
 			anim ActorOpen
 			{
 				anim = WindowOpenSuccess,
@@ -367,11 +375,11 @@ module Base
 			}
 			anim Open
 			{
-				sound = VehicleHoodOpen,
+				sound = VehicleSportTrunkOpen,
 			}
 			anim Close
 			{
-				sound = VehicleHoodClose,
+				sound = VehicleSportTrunkClose,
 			}
 			anim ActorOpen
 			{
@@ -617,7 +625,18 @@ module Base
 
 		part Door*
 		{
-			table install
+			{
+			}
+			anim Open
+			{
+				sound = VehicleSportDoorOpen,
+			}
+			anim Close
+			{
+				sound = VehicleSportDoorClose,
+			}
+
+		table install
 			{
 				recipes = Advanced Mechanics,
 			}

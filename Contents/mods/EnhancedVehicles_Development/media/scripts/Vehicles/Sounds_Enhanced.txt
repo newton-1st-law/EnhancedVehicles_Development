@@ -276,7 +276,7 @@ module Base
 		loop = false,
 		clip
 		{
-			file = media/sound/vehicle_enter.wav,
+			file = media/sound/vehicle_door_open.wav,
 			distanceMin = 2,
 			distanceMax = 20,
 			reverbMaxRange = 10,
@@ -297,4 +297,75 @@ module Base
 			reverbFactor = 0,
 		}
 	}
+	
+	sound VehicleSportDoorOpen
+	{
+		category = Vehicle,
+		loop = false,
+		clip
+		{
+			file = media/sound/vehicle_sport_door_open.wav,
+			distanceMin = 2,
+			distanceMax = 20,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
+	sound VehicleSportDoorClose
+	{
+		category = Vehicle,
+		loop = false,
+		clip
+		{
+			file = media/sound/vehicle_sport_door_close.wav,
+			distanceMin = 2,
+			distanceMax = 20,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
+	sound VehicleSportTrunkOpen
+	{
+		category = Vehicle,
+		loop = false,
+		clip
+		{
+			file = media/sound/vehicle_sport_trunk_open.wav,
+			distanceMin = 2,
+			distanceMax = 20,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
+	sound VehicleSportTrunkClose
+	{
+		category = Vehicle,
+		loop = false,
+		clip
+		{
+			file = media/sound/vehicle_sport_trunk_close.wav,
+			distanceMin = 2,
+			distanceMax = 20,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
+	sound VehicleDoorAmarm
+	{
+		category = Vehicle,
+		loop = false,
+		clip
+		{
+			file = media/sound/vehicle_door_alarm.wav,
+			distanceMin = 2,
+			distanceMax = 20,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+	
 }
