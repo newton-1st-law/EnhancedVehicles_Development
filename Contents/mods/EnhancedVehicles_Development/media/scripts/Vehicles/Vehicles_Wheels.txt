@@ -1,0 +1,50 @@
+module Base
+{
+	model Wheels_R15_1_L
+		{
+			mesh = Wheels/Wheels_R15_1_L,
+			texture = Wheels/Wheels_R15_1,
+			shader = vehiclewheel,
+			scale = 0.01,
+		}
+		
+	model Wheels_R15_1_R
+		{
+			mesh = Wheels/Wheels_R15_1_R,
+			texture = Wheels/Wheels_R15_1,
+			shader = vehiclewheel,
+			scale = 0.01,
+		}
+		
+	model Wheels_R15_2_L
+		{
+			mesh = Wheels/Wheels_R15_2_L,
+			texture = Wheels/Wheels_R15_2,
+			shader = vehiclewheel,
+			scale = 0.01,
+		}
+		
+	model Wheels_R15_2_R
+		{
+			mesh = Wheels/Wheels_R15_2_R,
+			texture = Wheels/Wheels_R15_2,
+			shader = vehiclewheel,
+			scale = 0.01,
+		}
+		
+	model Wheels_R15_3_L
+		{
+			mesh = Wheels/Wheels_R15_3_L,
+			texture = Wheels/Wheels_R15_3,
+			shader = vehiclewheel,
+			scale = 0.01,
+		}
+		
+	model Wheels_R15_3_R
+		{
+			mesh = Wheels/Wheels_R15_3_R,
+			texture = Wheels/Wheels_R15_3,
+			shader = vehiclewheel,
+			scale = 0.01,
+		}
+}

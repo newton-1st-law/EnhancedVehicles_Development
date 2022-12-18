@@ -1,5 +1,12 @@
 module Base
 {
+	model Vehicles_CapriceDetective
+	{
+		mesh = Vehicles/Vehicles_CapriceDetective,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.01,
+	}
 	vehicle CarDetective
 	{
 		mechanicType = 1,
@@ -10,39 +17,39 @@ module Base
 		{
 			file = Vehicles_CapriceDetective,
 			scale = 1.8200,
-			offset = 0.0000 0.3571 -0.0275,
+			offset = 0.0000 0.3132 0.0000,
 		}
 
 		spawnOffsetY = 0.3407,
 
 		skin
-        {
-            texture = Vehicles/CapriceDetective/Vehicles_CapriceDetective_Shell,
-        }
-
-		textureRust = Vehicles/CapriceDetective/Vehicles_CapriceDetective_Rust,
-		textureMask = Vehicles/CapriceDetective/Vehicles_CapriceDetective_Mask,
-		textureLights = Vehicles/CapriceDetective/Vehicles_CapriceDetective_Lights,
-		textureDamage1Overlay = Vehicles/CapriceDetective/Vehicles_CapriceDetective_Overlays_DAMAGED_01,
-		textureDamage1Shell = Vehicles/CapriceDetective/Vehicles_CapriceDetective_Shell_DAMAGED_01,
-		textureDamage2Overlay = Vehicles/CapriceDetective/Vehicles_CapriceDetective_Overlays_DAMAGED_02,
-		textureDamage2Shell = Vehicles/CapriceDetective/Vehicles_CapriceDetective_Shell_DAMAGED_02,
+		{
+			texture = Vehicles/CapriceDetective/Vehicles_CapriceDetective_Shell,
+		}
 
 		lightbar
 		{
 			soundSiren = EnhancedSiren3,
 		}
-		
+
 		sound
 		{
 			horn = EnhancedAirHorn2,
 		}
 
-		extents = 0.8901 0.6044 2.6374,
-		physicsChassisShape = 0.8901 0.6044 2.6374,
+		textureRust = Vehicles/CapriceDetective/Vehicles_CapriceDetective_Rust,
+		textureMask = Vehicles/CapriceDetective/Vehicles_CapriceDetective_Mask,
+		textureLights = Vehicles/CapriceDetective/Vehicles_CapriceDetective_Lights,
+		textureDamage1Overlay = Vehicles/CapriceSedan/Vehicles_CapriceSedan_Blood_Mask,
+		textureDamage2Overlay = Vehicles/CapriceSedan/Vehicles_CapriceSedan_Blood_Hvy,
+		textureDamage1Shell = Vehicles/CapriceSedan/Vehicles_CapriceSedan_Damaged_01,
+		textureDamage2Shell = Vehicles/CapriceSedan/Vehicles_CapriceSedan_Damaged_02,
+
+		extents = 0.9560 0.6044 2.6374,
+		physicsChassisShape = 0.9560 0.6044 2.6374,
 		shadowOffset = 0.0 0.0 0.0 0.0,
 		mass = 800,
-		centerOfMassOffset = 0.0000 0.2802 0.0000,
+		centerOfMassOffset = 0.0000 0.2802 -0.0055,
 		engineForce = 4000,
 		maxSpeed = 90f,
 		engineLoudness = 80,
@@ -57,7 +64,7 @@ module Base
 		extentsOffset = 0.5 0.5,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 1.0f,
-		steeringIncrement = 0.04,
+		steeringIncrement = 0.01,
 		steeringClamp = 0.3,
 		suspensionStiffness = 40,
 		suspensionCompression = 3.83,
@@ -72,7 +79,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 0.3626 -0.3022 0.8462,
+			offset = 0.3956 -0.2582 0.8132,
 			radius = 0.15f,
 			width = 0.2f,
 		}
@@ -80,7 +87,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -0.3626 -0.3022 0.8462,
+			offset = -0.3956 -0.2582 0.8132,
 			radius = 0.15f,
 			width = 0.2f,
 		}
@@ -88,7 +95,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 0.3626 -0.3022 -0.6319,
+			offset = 0.3956 -0.2582 -0.6593,
 			radius = 0.15f,
 			width = 0.2f,
 		}
@@ -96,7 +103,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -0.3626 -0.3022 -0.6319,
+			offset = -0.3956 -0.2582 -0.6593,
 			radius = 0.15f,
 			width = 0.2f,
 		}
@@ -107,7 +114,7 @@ module Base
 		{
 			position inside
 			{
-				offset = 0.1813 -0.1758 0.0440,
+				offset = 0.1813 -0.1484 0.0549,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -123,7 +130,7 @@ module Base
 		{
 			position inside
 			{
-				offset = -0.1813 -0.1758 0.0440,
+				offset = -0.1813 -0.1484 0.0549,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -139,7 +146,7 @@ module Base
 		{
 			position inside
 			{
-				offset = 0.1813 -0.1813 -0.3242,
+				offset = 0.1813 -0.1538 -0.4231,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -155,7 +162,7 @@ module Base
 		{
 			position inside
 			{
-				offset = -0.1813 -0.1813 -0.3242,
+				offset = -0.1813 -0.1538 -0.4231,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -169,37 +176,37 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 1.5165 0.8681 0.4725,
+			xywh = 0.0000 1.5549 0.8681 0.4725,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -1.5714 0.8681 0.4725,
+			xywh = 0.0000 -1.5549 0.8681 0.4725,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 0.7143 0.1538 0.4725 0.4725,
+			xywh = 0.7143 0.2363 0.4725 0.4725,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -0.7143 0.1538 0.4725 0.4725,
+			xywh = -0.7143 0.2363 0.4725 0.4725,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 0.7143 -0.3187 0.4725 0.4725,
+			xywh = 0.7143 -0.2363 0.4725 0.4725,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -0.7143 -0.3187 0.4725 0.4725,
+			xywh = -0.7143 -0.2363 0.4725 0.4725,
 		}
 
 		area GasTank
 		{
-			xywh = 0.0000 -1.5714 0.4725 0.4725,
+			xywh = 0.0000 -1.5549 0.4725 0.4725,
 		}
 
 		area TireFrontLeft
@@ -284,18 +291,56 @@ module Base
 		template = Door/part/DoorRearLeft,
 		template = Door/part/DoorRearRight,
 		template = Tire,
-		
-		        part Tire*
-        {
-            model InflatedTirePlusWheel
-            {
-                file = Wheel_Caprice1,
-            }
-        }
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = Wheels_R15_3_L,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = Wheels_R15_3_R,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = Wheels_R15_3_L,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = Wheels_R15_3_R,
+			}
+		}
 
 		template = Brake,
 		template = Suspension,
 		template = Radio,
 		template = Headlight,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2473 -1.3077,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2912 1.3077,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
 	}
 }
